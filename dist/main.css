@@ -1,0 +1,270 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overscroll-behavior: none;
+    background-color: black;
+  }
+
+.games-menu {
+  position: absolute;
+  width: 30vw;
+  height: 70vh;
+  margin-left: 10vh; 
+  margin-top: 15vh;
+  margin-bottom: auto;
+  background-color: rgb(0, 0, 0);
+  border-color: blue;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5%;
+  justify-content: space-around;
+  visibility: hidden;
+  overflow: hidden;
+  vertical-align: text-top;
+
+}
+
+
+.game-list {
+  position: relative;
+  margin-top: 1vh;
+  width: calc(100% - 71px);
+  z-index: 10;
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border: 2px solid red;
+}
+
+@keyframes game-listK {
+  0% { width: 0; }
+  100% { width: calc(100% - 71px);}
+}
+
+.game-list:hover {
+  background-color: rgb(128, 145, 190);
+  
+}
+
+
+.buttonType {
+
+  position: absolute;
+  margin-left: 46vw;
+  width: 16vw;
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 2px solid blue;
+  border-radius: 10%;
+  visibility: hidden;
+  /* transition-duration: 0.4s; */
+}
+
+.buttonType:hover {
+  background-color: rgb(128, 145, 190);
+  
+}
+
+
+#start-button {
+  margin-top:  41vh;
+
+}
+
+@keyframes start-buttonK {
+  0% { margin-left: 0; margin-top: 0; }
+  100% { margin-left: 46vw; margin-top: 41vh;}
+}
+
+#back-button-player {
+  margin-top:  77vh;
+}
+
+@keyframes back-buttonK {
+  0% { margin-left: 0; margin-top: 0; }
+  100% { margin-left: 46vw; margin-top: 77vh;}
+}
+
+#add-ai {
+  margin-top:  53vh;
+}
+
+@keyframes add-aiK {
+  0% { margin-left: 0; margin-top: 0; }
+  100% { margin-left: 46vw; margin-top: 53vh;}
+}
+
+#remove-ai{
+  margin-top:  65vh; 
+}
+
+@keyframes remove-aiK {
+  0% { margin-left: 0; margin-top: 0; }
+  100% { margin-left: 46vw; margin-top: 65vh;}
+}
+
+#back-button {
+  margin-top:  77vh;
+}
+
+
+#refresh-button {
+  margin-top:  53vh;
+}
+
+@keyframes refresh-buttonK {
+  0% { margin-left: 0; margin-top: 0; }
+  100% { margin-left: 46vw; margin-top: 53vh;}
+}
+
+#join-button {
+  margin-top:  41vh;
+}
+
+@keyframes join-buttonK {
+  0% { margin-left: 0; margin-top: 0; }
+  100% { margin-left: 46vw; margin-top: 41vh;}
+}
+
+#create-button{
+  position: absolute;
+  margin-top:  65vh; 
+  z-index: 10;
+  font-size: 12px;
+  padding: 15px 10px;
+}
+
+@keyframes create-buttonK {
+  0% { margin-left: 0; margin-top: 0; }
+  100% { margin-left: 46vw; margin-top: 65vh;}
+}
+
+#play-menu {
+    position: fixed;
+    z-index: 10;
+    top: 60%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    padding: 20px 30px;
+    background-color: black;
+    border-color: blue;
+    border-style: solid;
+    border-width: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  #play-button {
+    text-align: center;
+    background-color: transparent;
+    font-size: 36px;
+    color: white;
+    padding: 5px 20px;
+    margin-top: 30px;
+  }
+
+  #username-input {
+    padding: 5px 20px;
+    background-color: black;
+    color: white;
+    opacity: 1;
+    font-size: 36px;
+    text-align: center;
+    margin: 10px, 10px, 10px, 10px; 
+    border-color: blue;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5%;
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:white; 
+    opacity: 1; /* Firefox */
+  }
+
+  #full-container {
+    display: block;
+    position: relative;
+    transform: translateX(20%);
+    width: 70vw;
+    height: 98vh;
+    background-color: rgb(0, 0, 0);
+    border-color: blue;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5%;
+    justify-content: space-around;
+    overflow: auto;
+  }
+
+  .players-in-game{
+    position: relative;
+    z-index: 10;
+    font-size: 26px;
+    color: white;
+
+  }
+
+
+  #arrow {
+    fill: white;
+    pointer-events: none;
+  }
+
+
+  #players-playing{
+    position: absolute;
+    margin-top:  20vh; 
+    margin-left:  86vw;
+    z-index: 10;
+    font-size: 12px;
+    width: 12vw;
+
+    border-color: blue;
+    border-style: solid;
+    border-width: 5px;
+    display: none;
+    flex-direction: column;
+  }
+
+
+  #logo{
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    z-index: 12;
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+  
+
+
+  .wrapper{
+    position: absolute;
+    z-index: -1;
+  }
+
+
+
+
+
+
+
+  

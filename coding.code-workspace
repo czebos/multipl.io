@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\go\\src\\github.com\\brown-csci1380-s20\\raft-ali62-czborows"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\AegeonEco\\nodejs\\HelloWorld"
+		},
+		{
+			"path": "..\\io"
+		},
+		{
+			"path": "..\\testWebpack"
+		},
+		{
+			"path": "."
+		}
+	]
+}
