@@ -1,2 +1,2 @@
 # multipli.io
-A server-backed real time strategy game for expansion
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
