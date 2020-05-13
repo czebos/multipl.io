@@ -2,16 +2,16 @@
 ## In multipl.io there are only a few simple instructions. Enter a username, and join or create a game. Once you're in a lobby, wait for ## the game creater to start the game. Choose to add AI or just play with your friends!
 
 Make sure Node and NPM are installed. Then run:
-...
+'''
 $ npm run start 
-...
+'''
 on your local machine.
 
 If you would like to change the source code, run:
-...
+'''
 $ npm install
 $ npm run build
-...
+'''
 then the client source will be changed.
 
 ![Title Screen](https://i.imgur.com/3rkD02T.png)
