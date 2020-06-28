@@ -1,4 +1,4 @@
-# multipli.io
+# multipl.io
 
 Make sure Node and NPM are installed. Then run:
 ```
